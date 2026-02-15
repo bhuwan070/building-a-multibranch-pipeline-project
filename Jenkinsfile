@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'docker jenkins agent' }
     environment {
         CI = 'true'
     }
