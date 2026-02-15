@@ -5,5 +5,5 @@ echo '(written to ".pidfile"), all of which were created when either'
 echo '"deliver-for-development.sh" or "deliver-for-development.sh" was executed.'
 set -x
 kill $(cat .pidfile)
-pkill npm
+pkill /usr/bin/npm
 exit 0
